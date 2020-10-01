@@ -1,0 +1,397 @@
+resample(hegged, method="bilinear")
+resample
+r_up_0.1 <- aggregate(hegged, fact = 0.1/res(hegged))
+r_up_0.1
+r_up_0.1 <- aggregate(hegged, fact = 0.0083/res(hegged))
+res(r_up_0.1)
+res(lstt)
+plot(r_up_0.1,lstt)
+hegged <- r_up_0.1
+plot(hegged)
+ndvi_cropped <- aggregate(hegged, fact = 0.0083/res(hegged))
+plot(ndvi_cropped,lstt)
+lstt
+new_ndvi <- crop(extend(ndvi_cropped, lstt), lstt)
+new_ndvi <- extend(crop(ndvi_cropped, lstt), lstt)
+all.equal(extent(lstt), extent(new_ndvi))
+extent(new_ndvi)
+extent(lstt)
+?MODIS::EarthdataLogin()
+EarthdataLogin(usr=meashishdutta@gmail.com, pwd= whysooserious7)
+?EarthdataLogin
+lstt$value
+head(lstt)
+x <-raster("lst_bagmati.tif.vat.dbf")
+x <-raster("lst_bagmati.tif.aux.xml")
+x <-raster("lst_bagmati.tif")
+hist(lstt)
+(lst)
+hegged
+plot(y,x, ylab="NDVI", xlab="LST")
+plot(y,x, xlab="NDVI", ylab="LST")
+summary(lst)
+plot(lst$value)
+plot(lst$values)
+scatter.smooth(x=lstt$lst, y=ndvi$ndvi) 
+head(ndvi)
+GDALinfo(lst)
+GDALinfo('lst_2019.tif')
+setwd('C:/Users/dell/Documents/R/win-library/4.0/satellite/testdata/LC8')
+b1 <- raster("LC81950252013188LGN00_B1.TIF")
+head(b1)
+install.packages("landsat")
+library(modistools)
+library(MODIS)
+library(MODIStools)
+mt_bands
+bands <- mt_bands(product = "MOD11A2")
+head(bands)
+df <- data.frame("site_name" = paste("test",1:2))
+df$lat <- 40
+
+df$lon <- -110
+
+df
+subsets <- mt_batch_subset(df = df,
+product = "MOD11A2",
+band = "LST_Day_1km",
+internal = TRUE,
+start = "2004-01-01",
+end = "2004-03-31")
+subsets
+subset$value/10000
+subset$value*.02 -273.15
+subset$xllcorner
+lat_lon <-sin_to_ll(subset$xllcorner,subset$yllcorner)
+library(rgdal)
+scatter.smooth(x=lstt$lst, y=ndvi$ndvi, main="Dist ~ Speed") 
+scatter.smooth(x=lst$lst, y=ndvi$ndvi, main="Dist ~ Speed") 
+scatter.smooth(x=lst$values, y=ndvi$values) 
+x <-c(values(lst))
+plot(y,x)
+y <-c(values(ndvi))
+lst$value
+lst$1
+lst$"1"
+plot(y,x, xlab="NDVI", ylab="LST",abline(lm(y~x)))
+as.data.table(x)
+x <- as.data.table(x)
+dia1<- cbind(y,x)
+head(y)
+x$value
+x$values
+values(lst)
+plot(lst, main="LST")
+lst <-lst*.02
+ndvi_cropped <- ndvi_cropped*(1/10000)
+ndv<-crop(ndvi_cropped,crop_extent)
+plot(ndv)
+extent(ndv)
+extent(crop_extent)
+plot(ndvi)
+(ndv)
+ndvi
+a<-ratify(lst, count=TRUE)
+a
+head(a)
+pairs(stck[[1:2]],main="lst-ndvi")
+getMeta(lst,metaData ,what)
+subset <- mt_subset(product = "MOD11A2",
+lat = 28.3241,
+lon = 85.5678,
+band = "LST_Day_1km",
+start = "2019-12-01",
+end = "2019-12-31",
+progress = FALSE)
+subset <- mt_subset(product = "MOD11A2",
+lat = 28.3241,
+lon = 85.5678,
+band = "LST_Day_1km",
+start = "2019-12-01",
+end = "2019-12-31",
+crs = get_OVERRIDE_PROJ_DATUM_WITH_TOWGS84()
+progress = FALSE)
+subset <- mt_subset(product = "MOD11A2",
+lat = 28.3241,
+lon = 85.5678,
+band = "LST_Day_1km",
+start = "2019-12-01",
+end = "2019-12-31",
+crs = get_OVERRIDE_PROJ_DATUM_WITH_TOWGS84(),
+progress = FALSE)
+subset <- mt_subset(product = "MOD11A2",
+lat = 28.3241,
+lon = 85.5678,
+band = "LST_Day_1km",
+start = "2019-12-01",
+end = "2019-12-31",
+crs = wgs84,
+progress = FALSE)
+count(subset)
+count.fields(subset)
+value(lst)
+LC <- mt_subset(product = "MCD12Q1",
+lat = 48.383662,
+lon = 2.610250,
+band = "LC_Type1",
+start = "2005-01-01",
+end = "2005-12-30",
+km_lr = 2,
+km_ab = 2,
+site_name = "testsite",
+internal = TRUE,
+progress = FALSE)
+
+LC_r <- mt_to_raster(df = LC)
+
+LC_r <- mt_to_raster(df = subset)
+
+plot(LC_r)
+subset <- mt_subset(product = "MOD11A2",
+lat = 28.3241,
+lon = 85.5678,
+band = "LST_Day_1km",
+start = "2019-12-01",
+end = "2019-12-01",
+progress = FALSE)
+subset <- mt_subset(product = "MOD11A2",
+lat = 28.3241,
+lon = 85.5678,
+band = "LST_Day_1km",
+start = "2019-12-01",
+end = "2019-12-02",
+progress = FALSE)
+subset <- mt_subset(product = "MOD11A2",
+lat = 28.3241,
+lon = 85.5678,
+band = "LST_Day_1km",
+start = "2019-12-20",
+end = "2019-12-28",
+progress = FALSE)
+
+subset <- cbind(subset, lat_lon)
+plot(subset)
+subset_r
+??sin_to_ll
+subset 
+subset_r <- mt_to_raster(df = subset)
+(subset_r)
+lst <-aggregate(subset, fact = 0.0083/res(subset))
+LC <- mt_subset(product = lst)
+rf<-writeRaster(lst, filename="predict.tif", datatype="INT1U", format="GTiff", overwrite=TRUE)
+pr <-raster("predict.tif")
+pr
+head(pr)
+plot(pr)
+lst_2k19 <-raster("G:/Final_year_project_ref_reps/LST_2019_MODIS_Grid_8Day_1km_LST.tif")
+plot(lst_2k19)
+head(lst_2k19)
+lst_2k19_met <-read.met("G:/Final_year_project_ref_reps/LST_2019_MODIS_Grid_8Day_1km_LST.tif.met")
+plot(lst)
+extent(lst_cropped,ndvi_cropped)
+extent(lst_cropped) + extent(ndvi_cropped)
+extent(lst_cropped) 
+extent(ndvi_cropped) 
+tck <-stack(ndvi_cropped,lst_cropped)
+x <- (crop(ndvi_hegged,crop_extent))
+x <-mask(x,crop_extent)
+plot(x)
+y <-(crop(lst_hegged,crop_extent))
+y <-(mask(y,crop_extent))
+y <- y*.02
+values(y)
+library(hdf5)
+library(hdf5r)
+??hdf5r
+extent(x)
+extent(y)
+extent(ndvi)
+extent(lst)
+x<-(crop(mask(ndvi_hegged,crop_extent),crop_extent1))
+ndvi_cropped<-(crop(mask(ndvi_hegged,crop_extent),crop_extent1))
+extent(ndvi_cropped)
+plot(ndvi_cropped)
+lst_cropped<-(crop(mask(lst_hegged,crop_extent),crop_extent1))
+plot(lst_cropped)
+extent(lst_cropped)
+(lst_cropped)
+ndvi_cropped <- aggregate(ndvi_cropped, fact = 0.0083/res(ndvi_cropped))
+resolution(ndvi_cropped)
+res(ndvi_cropped)
+(ndvi_cropped)
+lst_cropped
+plot(ndvi_cropped,lst_cropped)
+t
+y<-y*.02
+y<-y-273.15
+y<-y+273.15
+y<-y/.02
+min(y)
+lst<-lst+273.15
+lst<-lst/.02
+minValue(lst)
+setMinMax(y,c(12435,14733))
+y <- reclassify(lst_cropped, cbind(minValue(lst_cropped)<=12435,NA)) 
+y <- reclassify(lst_cropped, cbind(minValue(lst_cropped)<12435,NA)) 
+y <- reclassify(lst_cropped, cbind((lst_cropped)<12435,NA)) 
+y <- reclassify(lst_cropped, cbind(values(lst_cropped)<12435,NA)) 
+y <- reclassify(lst_cropped, cbind((012435),NA)) 
+minValue(y)
+y <- reclassify(lst_cropped, cbind(minValue(lst_cropped=12435))) 
+??reclassify
+y <- reclassify(lst_cropped, (minValue(lst_cropped=12435))) 
+y <- reclassify(lst_cropped, (minValue(lst_cropped)=12435)) 
+??setMinMax
+y <- reclassify(lst_cropped, cbind(15,NA)) 
+y <- reclassify(lst_cropped, cbind(0,NA)) 
+y <- reclassify(y, cbind(15,NA)) 
+y <- reclassify(lst_cropped, c(0,NA)) 
+y[y < 0] <- NA
+y[y < 12435] <- NA
+y[y < 12432] <- NA
+y[lst_cropped < 12432] <- NA
+y<-y*.02-273.15
+plot(y)
+x<- aggregate(ndvi_cropped, fact = 0.0083/res(ndvi_cropped))
+x<-x/10000
+head(x)
+values(x)
+plot(x,y,xlim=0)
+??xlim
+plot(x,y,xlim(0,1))
+plot(x,y,xlim=c(0,1))
+plot(x,y,xlab = "NDVI",ylab="LST")
+ndvi_cropped
+plot(x,y)
+plot(x,y,ylab="lst_2019",xlab="ndvi_2019")
+plot(x,y,ylab="lst_2019",xlab="ndvi_2019",xlim(-.2,1))
+plot(x,y,xlim(-.2,1),ylab="lst_2019",xlab="ndvi_2019")
+plot(x,y,xlim=c(-.2,1),ylab="lst_2019",xlab="ndvi_2019")
+plot(ndvi,lst)
+rf<-writeRaster(ndvi, filename="G:/ndvi_chck.tif", format="GTiff", overwrite=TRUE)
+resamples()
+??resamples
+library(raster)
+??resample
+??resample()
+library(MODISTools)
+lat_lon <- sin_to_ll(subset$xllcorner,subset$yllcorner)
+subset <-cbind(subset,lat_lon)
+subset_r$values
+subset$values
+subset <- mt_subset(product = "MOD11A2",
++ lat = 28.3241,
++ lon = 85.5678,
++ band = "LST_Day_1km",
++ start = "2019-12-01",
++ end = "2019-12-08",
++ progress = FALSE)
+subset <- mt_subset(product = "MOD11A2",
+lat = 28.3241,
+lon = 85.5678,
+band = "LST_Day_1km",
+start = "2019-12-01",
+end = "2019-12-08",
+progress = FALSE)
+subset$value
+subset <- cbind(subset, lat_lon)
+subset_r <- mt_to_raster(df = subset)
+
+plot(subset_r)
+plot(bb)
+subset_r <- mt_to_raster(df = bb)
+
+bb
+polygon(bb)
+head(bb)
+head(subset)
+lat_lon <- sin_to_ll(subset$xllcorner, subset$yllcorner)
+subset<-cbind(subset,lat_lon)
+bb <- apply(subset, 1, function(x){
+mt_bbox(xllcorner = x['xllcorner'],
+yllcorner = x['yllcorner'],
+cellsize = x['cellsize'],
+nrows = x['nrows'],
+ncols = x['ncols'])
+})
+
+subset
+subset <- aggregate(subset, fact = 0.0083/res(subset))
+subsets1 <- mt_batch_subset(df = df,
+product = "MOD11A2",
+band = "LST_Day_1km",
+internal = TRUE,
+start = "2004-01-01",end = "2004-03-31"))
+
+subsets1 <- mt_batch_subset(df = df,
+product = "MOD11A2",
+band = "LST_Day_1km",
+internal = TRUE,
+start = "2004-01-01",end = "2004-03-31")
+
+dia1<- cbind(ndvi,lst)
+??as.data.table
+nn = c(a=0.1, b=0.2, c=0.3, d=0.4)
+library(data.table)
+as.data.table(nn)
+as.data.table(dia1)
+as.data.table(dia1)->dia1
+dia1
+max.dia1<- dia1 %>% group_by(ndvi) %>% top_n(1, lst)
+max.dia1<- dia1 > group_by(ndvi) > top_n(1, lst)
+x
+head(lst_cropped)
+lst_hegged
+1200*2145
+lst_cropped$1
+data_matrix <- rasterToPoints(lst)
+rasValue=extract(lst, data_matrix)
+data_matrix$value
+data_matrix
+head(data_matrix)
+??write.table()
+write.table(data_matrix,file='lst.csv', append=FALSE, sep= ',', row.names = FALSE, col.names=TRUE)
+dat <- fread("lst.csv", select = c(3))
+dat
+lst_dat <- fread("lst.csv", select = c(3))
+data_matrix <- rasterToPoints(ndvi)
+write.table(data_matrix,file='ndvi.csv', append=FALSE, sep= ',', row.names = FALSE, col.names=TRUE)
+ndvi_dat <- fread("ndvi.csv", select = c(3))
+dia1<- cbind(ndvi_dat, lst_dat)
+dia1<-as.data.table(dia1)
+dia1<-round(dia1,2)
+head(dia1)
+max.dia1<- dia1 > group_by(ndvi_dat) > top_n(1, lst_dat)
+ndvi_dat
+library(dplyr)
+max.dia1<- dia1 %>% group_by(ndvi_dat) %>% top_n(1, lst_dat)
+max.dia1<- dia1 %>% group_by(ndvi_2019) %>% top_n(1, lst_2019)
+plot.dia1.max<- plot(max.dia1$lst_2019~max.dia1$ndvi_2019)
+reg.dia1.max<-lm(formula=max.dia1$lst_2019~max.dia1$ndvi_2019, data= max.dia1)
+pdf("linear regression")
+pdf("linear regression.pdf")
+plot(reg.dia1.max)
+x <-cbind(lst,lst_dat)
+x <-cbind(lst_dat,lst)
+lst_dat
+lst
+head(lst)
+head(lst_dat)
+y <- fread("lst.csv")
+y$x
+y
+reg.dia1.max
+min.dia1<- dia1 %>% group_by(ndvi_2019) %>% top_n(1, lst_2019)
+max.dia1
+plot.dia1.min<- plot(min.dia1$lst_2019~max.dia1$ndvi_2019)
+min.dia1<- dia1 %<% group_by(ndvi_2019) %<% top_n(1, lst_2019)
+??top_n
+min.dia1<- dia1 %>% group_by(ndvi_2019) %>% top_n(1, -lst_2019)
+min.dia1
+plot.dia1.min<- plot(max.dia1$lst_2019~max.dia1$ndvi_2019)
+plot.dia1.min<- plot(min.dia1$lst_2019~min.dia1$ndvi_2019)
+reg.dia1.min<-lm(formula=min.dia1$lst_2019~min.dia1$ndvi_2019, data= min.dia1)
+reg.dia1.min
+pdf("linear regression_wet_edge.pdf")
+plot(reg.dia1.min)
+dev.off()

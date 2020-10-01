@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5596b895-b5fc-400e-903e-ce0886496767" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="R Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1fmORWW1amLghWJfS7miiveRSf8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../scatterplots" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5596b895-b5fc-400e-903e-ce0886496767" name="Default Changelist" comment="" />
+      <created>1596819793572</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596819793572</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="525" y="202" key="#Notifications" timestamp="1596823034017">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="525" y="202" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1596823034017" />
+    <state x="232" y="0" key="#Plugins" timestamp="1599197445973">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="232" y="0" key="#Plugins/0.0.1280.680@0.0.1280.680" timestamp="1599197445973" />
+    <state x="94" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599047351498">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="94" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1599047351498" />
+    <state x="320" y="76" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1599194842793">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="320" y="76" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1599194842793" />
+    <state x="184" y="84" key="FileChooserDialogImpl" timestamp="1600692286692">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="184" y="84" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1600692286692" />
+    <state x="141" y="0" key="SettingsEditor" timestamp="1599197586850">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="141" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1599197586850" />
+    <state x="362" y="82" width="540" height="524" key="StructurePopup" timestamp="1600513116468">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="362" y="82" width="540" height="524" key="StructurePopup/0.0.1280.680@0.0.1280.680" timestamp="1600513116468" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1596972802784">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1596972802784" />
+    <state x="187" y="97" width="1047" height="583" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1600746026086">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="187" y="97" width="1047" height="583" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1280.680@0.0.1280.680" timestamp="1600746026086" />
+  </component>
+</project>
